@@ -1,0 +1,24 @@
+nameString = \u59D3\u540D
+email = Email
+address = \u5730\u5740
+crud.save = \u4FDD\u5B58
+crud.saveAndContinue = \u4FDD\u5B58\u5E76\u7EE7\u7EED
+name = \u59D3\u540D
+curd.saveAndCreatAnthor = \u4FDD\u5B58\u5E76\u521B\u5EFA\u53E6\u4E00\u4E2A
+
+student_change_name.title = \u4FEE\u6539
+student_change_name.id = \u5B66\u53F7
+student_change_name.save = \u4FDD\u5B58
+student_change_name.name = \u59D3\u540D
+students.action = \u64CD\u4F5C
+students.modify_name = \u4FEE\u6539
+
+Postgraduates = \u7814\u7A76\u751F
+Students = \u672C\u79D1\u751F
+Postgraduates.actions = \u64CD\u4F5C
+
+Students.actions = \u64CD\u4F5C
+student.modify_name = \u4FEE\u6539
+postgraduate.modify_name = \u4FEE\u6539
+
+tuition = \u5B66\u8D39

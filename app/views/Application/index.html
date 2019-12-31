@@ -1,0 +1,34 @@
+<center>
+
+#{if session.get("username")}    
+    欢迎: ${user} ！
+    <p>
+
+    </p>
+    <div class="test3">
+        <a href="admin">点击进入管理页面</a>
+    </div>
+    <p>
+
+    </p>
+    <p>
+
+    </p>
+    <div id="logout"><a href=@{Secure.logout()}>
+    ${session.get("username")} &{"退出登录"}
+    </a></div>
+#{/if}
+
+#{else}
+    未登录，请登录！
+    <div id="login">
+        <p><a href=@{Secure.login()}> &{"menu.login"}
+        </a></p></div>
+#{/else}
+
+</center>
+<body background="https://wx1.sinaimg.cn/orj360/007iWHX8ly1g9btdhe8v5j30qs0izacs.jpg"
+      style=" background-repeat:no-repeat ;
+              background-size:100% 100%;
+              background-attachment: fixed;"
+>

@@ -1,0 +1,46 @@
+#{extends 'CRUD/layout.html' /}
+<h1>&{'postgraduate_change_name.title'} ${postgraduate}</h1>
+
+#{if flash.error} 
+<p style="color:#c00"> ${flash.error} </p> 
+#{/if} 
+
+#{form @doModifyName(), enctype:'multipart/form-data'}
+
+<div class="crudField crud_postgraduate">
+        <label for="postgraduateid">&{'postgraduate_change_name.id'}</label>
+        <input id="postgraduateid" type="text" name="object.id" value="${object.id}" /> 
+        <span class="crudHelp"></span>
+</div>
+<div class="crudField crud_postgraduate">
+        <label for="postgraduatename">&{'postgraduate_change_name.name'}</label>
+        <input id="postgraduatename" type="text" name="object.name" value="${object.nameString}" /> 
+        <span class="crudHelp"></span>
+</div>
+<p>
+</p>
+<div style="position:relative;left:0px">
+    <style type="text/css">
+        .div {
+            display: inline-block;
+            padding: .3em .5em;
+            background-image: linear-gradient(#ddd, #bbb);
+            border: 1px solid rgba(0,0,0,.2);
+            border-radius: .3em;
+            box-shadow: 0 1px white inset;
+            text-align: center;
+            text-shadow: 0 1px 1px black;
+            color:white;
+            font-weight: bold;
+        }
+        .div:active{
+            box-shadow: .05em .1em .2em rgba(0,0,0,.6) inset;
+            border-color: rgba(0,0,0,.3);
+            background: #bbb;
+        }
+        a {text-decoration: none}</style>
+      <input type="submit" name="_save" value="&{'postgraduate_change_name.save'}" />
+
+</div>   
+   
+#{/form}

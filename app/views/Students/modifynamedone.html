@@ -1,0 +1,36 @@
+#{extends 'CRUD/layout.html' /}
+
+<h1>&{'student_change_name.title'} ${student}</h1>
+学号为:
+<p style="color:#c00"> ${object.id} </p>
+修改为：
+<p style="color:#c00"> ${object.nameString}
+
+<p>
+
+</p>
+<div style="position:relative;top:10px;left: 2px">
+    <button class="small button">
+        <style type="text/css">
+            .div {
+                display: inline-block;
+                padding: .3em .5em;
+                background-image: linear-gradient(#ddd, #bbb);
+                border: 1px solid rgba(0,0,0,.2);
+                border-radius: .3em;
+                box-shadow: 0 1px white inset;
+                text-align: center;
+                text-shadow: 0 1px 1px black;
+                color:white;
+                font-weight: bold;
+            }
+            .div:active{
+                box-shadow: .05em .1em .2em rgba(0,0,0,.6) inset;
+                border-color: rgba(0,0,0,.3);
+                background: #bbb;
+            }
+            a {text-decoration: none}</style>
+        <a href="/admin/students">返回</a>
+    </button>
+
+</div>

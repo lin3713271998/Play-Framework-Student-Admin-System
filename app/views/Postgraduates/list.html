@@ -1,0 +1,63 @@
+#{extends 'CRUD/layout.html' /}
+#{set title:messages.get('crud.list.title', type.name) /}
+
+<div id="crudList" class="${type.name}">
+
+    <h2 id="crudListTitle">&{'crud.list.title', type.name}</h2>
+
+    <div id="crudListSearch">
+    #{crud.search /}
+    </div>
+
+    <div id="crudListTable">
+    #{crud.table fields:['nameString','tuition','Postgraduates.actions']}
+        #{crud.custom 'Postgraduates.actions'}
+            <a href=@{Postgraduates.modifyName(object.id)}>&{"postgraduate.modify_name"}</a>
+        #{/crud.custom}
+    #{/crud.table}
+    </div>
+
+    <div id="crudListPagination">
+    #{crud.pagination /}
+    </div>
+
+    <p id="crudListAdd">
+        <a href="@{blank()}">&{'crud.add', type.modelName}</a>
+    </p>
+
+
+</div>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<div style="position:relative;top:10px;left:2px">
+    <button class="small button">
+        <style type="text/css">
+            .div {
+                display: inline-block;
+                padding: .3em .5em;
+                background-image: linear-gradient(#ddd, #bbb);
+                border: 1px solid rgba(0,0,0,.2);
+                border-radius: .3em;
+                box-shadow: 0 1px white inset;
+                text-align: center;
+                text-shadow: 0 1px 1px black;
+                color:white;
+                font-weight: bold;
+            }
+            .div:active{
+                box-shadow: .05em .1em .2em rgba(0,0,0,.6) inset;
+                border-color: rgba(0,0,0,.3);
+                background: #bbb;
+            }
+            a {text-decoration: none}</style>
+        <a href="/admin">返回</a>
+    </button>
+
+</div>

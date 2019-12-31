@@ -1,0 +1,7 @@
+# Application dependencies
+
+require:
+    - play
+    - play -> docviewer
+    - crud
+    - secure
